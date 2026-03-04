@@ -1,0 +1,34 @@
+{
+    "Central Cambria High School": {
+        "zipcode": 15931,
+        "thresholds": {
+            "Total Snowfall": 4.0,
+            "Average Temperature": 32.0,
+            "Maximum Wind Speed": 35.0
+        }
+    },
+    "Penn Cambria High School": {
+        "zipcode": 16630,
+        "thresholds": {
+            "Total Snowfall": 6.0,
+            "Average Temperature": 30.0,
+            "Maximum Wind Speed": 20.0
+        }
+    },
+    "Indiana Area Senior High School": {
+        "zipcode": 15701,
+        "thresholds": {
+            "Total Snowfall": 5.0,
+            "Average Temperature": 28.0,
+            "Maximum Wind Speed": 22.0
+        }
+    },
+    "IUP": {
+        "zipcode": 15701,
+        "thresholds": {
+            "Total Snowfall": 2.0,
+            "Average Temperature": 20.0,
+            "Maximum Wind Speed": 12.0
+        }
+    }
+}
