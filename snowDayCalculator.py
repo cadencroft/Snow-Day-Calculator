@@ -5,8 +5,15 @@ import os
 from collections import defaultdict
 from datetime import datetime, timedelta
 import requests
+from dotenv import load_dotenv
 
+dotenv_path = os.path.join(os.path.dirname(__file__), ".env")
+load_dotenv(dotenv_path)
 
+API_KEY = os.getenv("API_KEY")
+if API_KEY is None:
+    raise ValueError("API_KEY not found. Make sure .env exists and contains API_KEY.")
+print("Loaded API_KEY successfully")
 
 #---------- API & Algorithm Functions ----------
 
@@ -54,7 +61,7 @@ def getNextTwoDays():
 
 def getWeatherAttributesNextTwoDays(school_zipcode, next_two_days):
     
-    API_KEY = "164577ac2f8cc3105a4442e786f46e68"
+    
 
     url = f"https://api.openweathermap.org/data/2.5/forecast?zip={school_zipcode},US&appid={API_KEY}&units=imperial"
 
