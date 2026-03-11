@@ -1,34 +1,42 @@
 {
-    "Central Cambria High School": {
-        "zipcode": 15931,
-        "thresholds": {
-            "Total Snowfall": 4.0,
-            "Average Temperature": 32.0,
-            "Maximum Wind Speed": 35.0
-        }
-    },
-    "Penn Cambria High School": {
-        "zipcode": 16630,
-        "thresholds": {
-            "Total Snowfall": 6.0,
-            "Average Temperature": 30.0,
-            "Maximum Wind Speed": 20.0
-        }
-    },
-    "Indiana Area Senior High School": {
-        "zipcode": 15701,
-        "thresholds": {
-            "Total Snowfall": 5.0,
-            "Average Temperature": 28.0,
-            "Maximum Wind Speed": 22.0
-        }
-    },
-    "Slippery Rock University": {
-        "zipcode": 16057,
-        "thresholds": {
-            "Total Snowfall": 14.0,
-            "Average Temperature": 10.0,
-            "Maximum Wind Speed": 30.0
-        }
+  "Penns Valley Area School District": {
+    "zipcode": 16875,
+    "thresholds": {
+      "Total Snowfall": 3.0,
+      "Average Temperature": 30.0,
+      "Maximum Wind Speed": 25.0
     }
+  },
+  "New Castle Area School District": {
+    "zipcode": 16101,
+    "thresholds": {
+      "Total Snowfall": 2.5,
+      "Average Temperature": 12.0,
+      "Maximum Wind Speed": 20.0
+    }
+  },
+  "Pittston Area School District": {
+    "zipcode": 18640,
+    "thresholds": {
+      "Total Snowfall": 4.0,
+      "Average Temperature": 5.0,
+      "Maximum Wind Speed": 30.0
+    }
+  },
+  "Charleroi School District": {
+    "zipcode": 15022,
+    "thresholds": {
+      "Total Snowfall": 2.0,
+      "Average Temperature": 22.0,
+      "Maximum Wind Speed": 22.0
+    }
+  },
+  "Gateway School District": {
+    "zipcode": 15146,
+    "thresholds": {
+      "Total Snowfall": 3.5,
+      "Average Temperature": 31.0,
+      "Maximum Wind Speed": 28.0
+    }
+  }
 }
