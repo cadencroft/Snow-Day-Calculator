@@ -401,6 +401,7 @@ def press_button_addProfile(answer):
     frame_addProfile.pack_forget()
     frame_displayResults.pack()
 
+    global schoolProfile
     schoolProfile = {
         schoolName: {
             "zipcode": int(zipCode),
@@ -417,11 +418,13 @@ def press_button_addProfile(answer):
     if answer == "yes":
         addProfileToFile(schoolProfile)
         updateOptionMenuValues()
-    
     profiles.update(schoolProfile)
 
     global nextTwoDates, isSnowDayResults
     nextTwoDates, isSnowDayResults = mainAlgorithm(schoolName)
+
+    if answer == "no":
+        del profiles[schoolName]
 
     print("*****")
     print(nextTwoDates)
@@ -534,12 +537,20 @@ label_displayResults_stats = tk.Label(frame_displayResults_Stats, text="PlaceHol
 label_displayResults_stats.pack(padx=10, pady=10)
 
 def press_button_displayResults_Stats():
-    
+
+    if schoolName in profiles:
+        thresholds = profiles[schoolName]["thresholds"]
+    else:
+        thresholds = schoolProfile[schoolName]["thresholds"]
+
+    print("schoolName:" + schoolName)
+    print(thresholds)
+
     stats = (
         f"Thresholds for {schoolName}:\n"
-        f"      Total Snowfall:                   {profiles[schoolName]["thresholds"]["Total Snowfall"]:>5}    in\n"
-        f"      Average Temperature:       {profiles[schoolName]["thresholds"]["Average Temperature"]:>5}   F\n"
-        f"      Maximum Wind Speed:     {profiles[schoolName]["thresholds"]["Maximum Wind Speed"]:>5}    mph\n\n"
+        f"      Total Snowfall:                   {thresholds["Total Snowfall"]:>5}    in\n"
+        f"      Average Temperature:       {thresholds["Average Temperature"]:>5}   F\n"
+        f"      Maximum Wind Speed:     {thresholds["Maximum Wind Speed"]:>5}    mph\n\n"
         f"Forcast for Day 1:\n"
         f"      Total Snowfall:                    {day1_thresholds['Total Snowfall']:>5}    in\n"
         f"      Average Temperature:       {day1_thresholds['Average Temperature']:>5}   F\n"    

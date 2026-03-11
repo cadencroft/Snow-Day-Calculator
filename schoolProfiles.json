@@ -23,12 +23,12 @@
             "Maximum Wind Speed": 22.0
         }
     },
-    "IUP": {
-        "zipcode": 15701,
+    "Slippery Rock University": {
+        "zipcode": 16057,
         "thresholds": {
-            "Total Snowfall": 2.0,
-            "Average Temperature": 20.0,
-            "Maximum Wind Speed": 12.0
+            "Total Snowfall": 14.0,
+            "Average Temperature": 10.0,
+            "Maximum Wind Speed": 30.0
         }
     }
 }
